@@ -1,0 +1,67 @@
+{"CPU":[{
+  "id":"BX80646G3258",
+  "name":"Intel Pentium G3258",
+  "price":69.99,
+  "filters":{"MB":"1150"}
+},{
+  "id":"BX80646I34170",
+  "name":"Intel Core i3-4170",
+  "price":124.44,
+  "filters":{"MB":"1150"}
+},{
+  "id":"BX80646I74790K",
+  "name":"Intel Core i7-4790K",
+  "price":339.99,
+  "filters":{"MB":"1150"}
+},{
+  "id":"BX80648I75820K",
+  "name":"Intel Core i7-5820K",
+  "price":389.99,
+  "filters":{"MB":"2011"}
+}],
+  "MB":[{
+    "id":"Z97-A/USB3.1",
+    "name":"Asus Z97-A/USB 3.1",
+    "price":148.99,
+    "filters":{
+      "CPU":"1150",
+      "RAM":"DDR31600"
+    }
+  },{
+    "id":"X99-DELUXE/U3.1",
+    "name":"ASUS X99-DELUXE/U3.1",
+    "price":389.99,
+    "filters":{
+      "CPU": "2011",
+      "RAM": "DDR42133"
+    }
+  }],
+  "RAM":[{
+    "id": "F4-2133C15D-8GRR",
+    "name": "G.SKILL Ripjaws 4 series 8GB DDR4 2133",
+    "price": 64.99,
+    "filters":{"MB": "DDR42133"}
+  },{
+    "id": "F3-12800CL9D-8GBRL",
+    "name": "G.SKILL Ripjaws Series 8GB DDR3 1600",
+    "price": 54.99,
+    "filters":{"MB": "DDR31600"}
+  }],
+  "GPU":[{
+    "id":"GTX960",
+    "name":"nVidia GeForce GTX 960 2GB",
+    "price":209.99,
+    "filters":{}
+  }],
+  "HD":[{
+    "id":"MZ-7KE512BW",
+    "name":"SAMSUNG 850 PRO 512GB SSD",
+    "price":259.99,
+    "filters":{}
+  },{
+    "id":"MZ-7KE1T0BW",
+    "name":"SAMSUNG 850 PRO 1TB SSD",
+    "price":499.99,
+    "filters":{}
+  }]
+}

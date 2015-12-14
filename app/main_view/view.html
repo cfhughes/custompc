@@ -1,0 +1,23 @@
+<div class="container">
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+        <div class="panel panel-default" ng-repeat="type in mainTypes">
+
+            <div class="panel-heading" role="tab" id="heading{{type}}">
+                <div class="part-select" ng-repeat="part in parts[type] | filter:filters[type]:compatible" ng-click="select(type,part)" ng-style="part_style(part.image,type,part)"><p class="part-select-text">{{part.name}}<span ng-if="parts[type].selected && type != 'HD' && parts[type].selected.length > 0"> {{part.price - parts[type].selected[0].price | currency }}</span><span ng-if="type == 'HD'"> {{part.price | currency }}</span></p></div><br/><br>
+                <h4 class="panel-title selected-part-title">
+                        {{type}}: <span ng-repeat="s in parts[type].selected track by $index"> {{s.name}} <span ng-click="unselect(type,s)" class="unselect">[x]</span></span>
+                </h4>
+
+            </div>
+            <div id="collapse{{type}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{type}}">
+                <div class="panel-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>Total: {{ total() | currency}}</p>
+    <p>?<span ng-repeat="type in mainTypes">{{type}}=<span ng-repeat="part in parts[type].selected track by $index">{{part.id}}<span ng-if="!$last">|</span></span>&</span></p>
+</div>
